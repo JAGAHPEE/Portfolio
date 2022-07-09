@@ -1,0 +1,1006 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    background: #000000;
+    
+}
+
+/* navbar */
+
+/*  side bar */
+.sidebar {
+    margin-top: 0;
+    width: 8rem;
+    height: 100%;
+    background-color: #eee;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+
+}
+
+.menu-icon {
+    cursor: pointer;
+}
+
+.line {
+    height: .2rem;
+    width: 2.5rem;
+    background-color: #222;
+    margin-bottom: .6rem;
+    margin-top: 1rem;
+}
+
+.line-1,
+.line-3 {
+    width: 1.8rem;
+    transition: all 0.5s;
+}
+
+.menu-icon:hover .line {
+    width: 2.5rem;
+}
+
+.social-icons-list {
+    list-style: none;
+    padding: 0;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.social-link {
+    font-size: 2rem;
+    color: #777;
+    transition: 0.3s color;
+}
+
+.social-link:hover {
+    color: #86c1de;
+}
+
+.year p {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #555;
+}
+
+/* end of side bar */
+/* Navigation */
+.navigation {
+    /* margin-left: 8rem; */
+    left: -32rem;
+    position: fixed;
+    width: 40rem;
+    height: 100%;
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c297f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: left 0.8s cubic-bezier(1, 0, 0, 1);
+    z-index: 5;
+}
+
+.navigation-heading {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    color: #b85d1c;
+    text-align: center;
+}
+
+.navigation-search {
+    position: relative;
+}
+
+.navigation-search-input {
+    padding: 1rem 2rem;
+    width: 30rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.6rem;
+    color: #b85d1c;
+    letter-spacing: .1rem;
+    outline: none;
+    border: 0.1rem solid #555;
+    border-radius: 10rem;
+    transition: background-color 0.2s;
+
+}
+
+.navigation-search-input:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+.navigation-search-btn {
+    border: none;
+    background-color: transparent;
+    color: #b85d1c;
+    font-size: 1.7rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.navigation-search-btn:focus {
+    outline: none;
+}
+
+.navigation-list {
+    list-style: none;
+    padding: 0;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-link {
+    color: #fff;
+    letter-spacing: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.5s;
+
+}
+
+.navigation-item {
+    position: relative;
+    padding: 15px;
+}
+
+.navigation-link::before {
+    content: "";
+    width: 0rem;
+    height: .1rem;
+    background-color: #b85d1c;
+    position: absolute;
+    top: 2.5rem;
+    left: -3rem;
+    /* transition: width 0.5s; */
+    transition: width 0.5s cubic-bezier(1, 0, 0, 1);
+}
+
+.navigation-link::after {
+    content: "";
+    width: 0rem;
+    height: .1rem;
+    background-color: #b85d1c;
+    position: absolute;
+    top: 2.5rem;
+    right: -2rem;
+    /* transition: width 0.5s; */
+    transition: width 0.5s cubic-bezier(1, 0, 0, 1);
+}
+
+.navigation-link:hover {
+    color: #b85d1c;
+
+}
+
+.navigation-link:hover::after,
+.navigation-link:hover::before {
+    width: 3rem;
+}
+
+.copyright {
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+
+.checkbox:checked~.navigation {
+    left: 8rem;
+}
+
+
+.checkbox:checked~.sidebar .line-1 {
+    transform: rotate(-405deg) translate(-5px, 5px);
+    width: 2.5rem;
+}
+
+
+.checkbox:checked~.sidebar .line-2 {
+    opacity: 0;
+}
+
+
+.checkbox:checked~.sidebar .line-3 {
+    transform: rotate(405deg) translate(-12px, -12px);
+    width: 2.5rem;
+}
+
+/* ed of Navigation */
+/* end of nav bar */
+
+/* Header */
+.image1 {
+    border-radius: 100px;
+    width: 65px;
+    height: 65px;
+    margin: 8px;
+}
+
+.header {
+    margin-left: 8rem;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(/Header/header.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.brand {
+    display: flex;
+}
+
+.hotal-heading {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.7rem;
+    font-weight: 400;
+    color: #b85d1c;
+    letter-spacing: .2rem;
+}
+
+.banner {
+    color: #ddd;
+    height: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-heading {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 7rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    animation: anim 2s;
+}
+
+.banner-paragraph {
+    font-size: 3.5rem;
+    font-weight: 300;
+    animation: anim 1.5s .5s backwards;
+}
+
+.banner-button {
+    width: 21rem;
+    padding: 1.2rem 2rem;
+    font-size: 2rem;
+    color: #333;
+    letter-spacing: .1rem;
+    border: none;
+    border-radius: 10rem;
+    outline: none;
+    background: linear-gradient(to right, gold, #b85d1c);
+    cursor: pointer;
+    animation: anim 1.5s 1s backwards;
+
+}
+
+.banner-button:hover {
+    background: linear-gradient(to left, gold, #b85d1c);
+}
+
+.banner-button:active {
+    transform: translateY(.2rem);
+}
+
+@keyframes anim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* End of Header */
+.listlink {
+    text-decoration: none;
+    color: #b85d1c;
+}
+
+/* about us */
+.about-us {
+    margin-left: 8rem;
+    display: flex;
+    background-color: #ddd;
+    padding: 5rem 0rem;
+    
+}
+
+.about-us-content {
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.about-us-heading {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #555;
+}
+
+.small-underline {
+    width: 9rem;
+    height: .1rem;
+    background-color: #b85d1c;
+    margin: 0 auto 1rem auto;
+
+}
+
+.big-underline {
+    width: 20rem;
+    height: .1rem;
+    background-color: #b85d1c;
+}
+
+.sub-heading {
+    font-size: 3.5rem;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    color: #b85d1c;
+}
+
+.about-us-paragraph {
+    font-size: 1.6rem;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    /* margin-bottom: 2rem; */
+}
+
+
+.about-us-btn {
+    width: 15rem;
+    padding: 0.7rem 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #b85d1c;
+    background-color: transparent;
+    border: .1rem solid #b85d1c;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-arrow {
+    margin-left: .5rem;
+    transition: margin-left .4s;
+}
+
+.about-us-btn:hover .btn-arrow {
+    margin-left: 1.5rem;
+    
+}
+
+.about-us-images {
+    flex: 1 1;
+    position: relative;
+}
+
+.image {
+    width: 32rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 3rem 6rem rgba(0, 0.0, .4);
+    border-radius: .4rem;
+}
+
+.image-1 {
+    transform: translate(-20%, -90%);
+}
+
+.image-2 {
+    transform: translate(-70%, -70%);
+}
+
+.image-3 {
+    transform: translate(-50%, -50%);
+}
+
+.image-4 {
+    transform: translate(-30%, -30%);
+}
+.project{
+    background-color: rgb(134, 204, 241);
+    padding-top: 5rem;
+}
+/* End of About Us */
+
+/* common header */
+.common-header {
+    padding: 5rem;
+    text-align: center;
+    color: #b85d1c;
+}
+
+.small-underline {
+    width: 9rem;
+    height: .1rem;
+    margin: 0 auto 1rem auto;
+    background-color: #b85d1c;
+    margin: 0 auto 1rem auto;
+
+}
+
+.big-underline {
+    width: 20rem;
+    height: .1rem;
+    margin: auto;
+    background-color: #b85d1c;
+}
+
+.common-heading {
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: .2rem;
+}
+
+/* End of common header */
+
+
+/* Rooms */
+
+.rooms {
+    margin-left: 8rem;
+    background-image: linear-gradient( 179.6deg,  rgb(125, 210, 255) 5.3%, rgb(18, 23, 31) 78.4% );
+    
+}
+
+.rooms-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skc-card {
+    width: 40rem;
+    margin: 5rem;
+    background-color: #15141b;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.skc-img {
+    width: 100%;
+    height: 60%;
+    transition: all 1s;
+}
+
+.skc-img:hover {
+    transform: scale(1.15);
+    opacity: 1.5;
+}
+
+.skc-card-content {
+    color: #ddd;
+    padding: 2rem;
+
+}
+
+.skc-card-heading {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.skc-card-paragraph {
+    font-size: 1.5rem;
+    color: #777;
+    align-items: stretch;
+}
+
+.skc-price {
+    font-size: 5rem;
+    font-weight: 300;
+    text-align: right;
+    margin: 0;
+    /* text-align: center; */
+}
+
+.skc-card-btn {
+    width: 15rem;
+    padding: 1.5rem 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #b85d1c;
+    background-color: transparent;
+    border: .1rem solid #b85d1c;
+    border-radius: 10rem;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.skc-card-btn:hover {
+    background-color: #ffffff;
+    border-color: white;
+}
+
+.rooms-btn-wrapper {
+    text-align: center;
+}
+
+.rooms-btn {
+    width: 20rem;
+    padding: 1.5rem 1rem;
+    margin: 4rem 0;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: #b85d1c;
+    border: .2rem solid #b85d1c;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.2);
+    transition: all .3s;
+}
+
+.rooms-btn:hover {
+    background-color: #b85d1c;
+    color: #ddd;
+
+}
+
+/* End of Rooms */
+
+/* Customers */
+
+/* Customers */
+.customers {
+    margin-left: 8rem;
+    padding-bottom: 7rem;
+    background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgb(53, 57, 174) 0%, rgb(18, 23, 31) 78.4% );
+
+    
+}
+
+.sk-paragraph {
+    font-size: 1.8rem;
+    color: #ddd;
+    width: 50%;
+    margin: 2rem auto 8rem auto;
+    text-align: center;
+}
+
+.sk-card {
+    background-color: #ddd;
+    width: 50rem;
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+.card-2 {
+    margin-left: 2rem;
+}
+
+.sk-card-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.sk-image-wrapper {
+    margin: auto 0;
+    padding-bottom: 1.3rem;
+    padding-top: 1.3rem;
+
+}
+
+.sk-image {
+    width: 20rem;
+    margin-left: -1.3rem;
+}
+
+.sk-info {
+    padding: 0 2rem;
+}
+
+.sk-fullName {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 0;
+
+}
+
+.sk-paragraph-1 {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #b85d1c;
+    text-align: justify;
+}
+
+.sk-paragraph-2 {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #b85d1c;
+    text-align: justify;
+}
+
+/* End of Customers */
+
+/* footer */
+
+.footer {
+    margin-left: 8rem;
+
+}
+
+.main-part {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient( 110.8deg,  rgb(14, 14, 47) 0%, rgb(51, 26, 83) 114.5% );
+
+    padding: 4rem;
+}
+
+.hotel-heading {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #b85d1c;
+}
+
+.footer-list {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.footer-list-item {
+    margin-bottom: 2rem;
+}
+
+.footer-list-link {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #ddd;
+}
+
+.contact p {
+    font-size: 1.5rem;
+    color: #ddd;
+    margin-bottom: 4rem;
+}
+
+.footer-form {
+    display: flex;
+}
+
+.footer-input {
+    padding: 1rem;
+    width: 20rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.8rem;
+    color: #444;
+    outline: none;
+}
+
+.footer-btn {
+    padding: 1rem;
+    background-color: #b85d1c;
+    color: #ddd;
+    border: none;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+.footer-btn:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.gallery {
+    width: 45rem;
+}
+.certificates {
+    width:60rem;
+}
+
+.image-wrapper {
+    width: 13rem;
+    margin: .4rem;
+    overflow: hidden;
+
+}
+
+.footer-image {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /* It wil not  shake image */
+    transition: all .5s;
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-image:hover {
+    transform: scale(1.3);
+    opacity: 1.5;
+}
+
+.creator-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 0 4rem;
+
+}
+
+.copyright-text {
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+.text-right {
+    font-size: 1.4rem;
+    color: #ddd;
+
+}
+
+.text-right i {
+    font-size: 2rem;
+    margin: .5rem;
+    color: tomato
+}
+
+.text-right span {
+    color: gold;
+}
+/* end of footer */
+
+
+@media(max-width:1400px) {
+    .sk-card-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sk-card:first-child {
+        margin-bottom: 3rem;
+    }
+
+    .main-part {
+        flex-direction: column;
+    }
+
+    .footer-list {
+        display: flex;
+    }
+
+    .footer-list-item {
+        margin-right: 3rem;
+    }
+    .certificates {
+        width:fit-content;
+        padding: 0 3rem;
+    }
+}
+
+@media(max-width:1200px) {
+    .about-us {
+        flex-direction: column;
+        padding-bottom: 20rem;
+    }
+
+    .about-us-content {
+        margin-bottom: 13rem;
+    }
+    .certificate-sec{
+        margin-bottom: 6rem;
+    }
+
+    .image {
+        width: 22rem;
+    }
+}
+
+@media(max-width:900px) {
+    .banner {
+        text-align: center;
+    }
+
+    .banner-heading {
+        font-size: 4.7rem;
+    }
+
+    .banner-paragraph {
+        font-size: 2.6rem;
+    }
+
+    .banner-button {
+        width: 16rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:750px) {
+    .sk-card {
+        flex-direction: column;
+        width: 20rem;
+    }
+
+    .sk-image {
+        margin-left: 0;
+    }
+
+    .footer-list {
+        display: block;
+    }
+
+    .creator-part {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .copyright-text {
+        order: 1;
+    }
+
+    .skc-card {
+        height: fit-content;
+    }
+
+    .gallery , .certificates{
+        width: fit-content;
+    }
+
+    .image-wrapper {
+        width: 12rem;
+    }
+
+}
+
+@media(max-width:450px) {
+    .navigation {
+        width: 20rem;
+    }
+
+    .navigation-search-input {
+        width: 15rem;
+    }
+
+    .navigation-link {
+        font-size: 1rem;
+    }
+
+    .hotal-heading {
+        font-size: 2rem;
+        margin: auto 0;
+    }
+
+    .banner {
+        height: 100%;
+        margin-top: -10rem;
+    }
+
+    .banner-heading {
+        font-size: 3rem;
+    }
+
+    .banner-paragraph {
+        font-size: 2rem;
+    }
+
+    .image {
+        width: 7rem;
+    }
+
+    .about-us-heading {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .sub-heading {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .about-us {
+        padding-bottom: 15rem;
+    }
+
+    .about-us-content {
+        padding: 5rem;
+    }
+
+    .common-heading {
+        font-size: 2rem;
+
+    }
+
+    .small-underline {
+        width: 5rem;
+    }
+
+    .big-underline {
+        width: 12rem;
+    }
+
+    .skc-card-heading {
+        font-size: 1.5rem;
+    }
+
+    .skc-price {
+        font-size: 2.5rem;
+        margin-bottom: .5rem;
+        text-align: left;
+    }
+
+    .skc-card-btn {
+        width: 12rem;
+        padding: 1rem .5rem;
+        font-size: 1rem;
+    }
+
+    .link {
+        text-decoration: none;
+    }
+
+    .sk-paragraph {
+        font-size: 1.4rem;
+        width: 80%;
+    }
+
+    .main-part {
+        padding: 2rem;
+    }
+
+    .footer-input {
+        width: 12rem;
+    }
+
+    .image-wrapper {
+        width: 10rem;
+    }
+
+    .skc-price {
+        font-size: 2rem;
+        /* top: -10px; */
+        padding-bottom: 1rem;
+    }
+
+    .skc-card {
+        height: fit-content;
+    }
+
+    .gallery {
+        width: fit-content;
+    }
+
+
+}
