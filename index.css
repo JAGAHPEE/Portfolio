@@ -359,6 +359,9 @@ body {
     font-weight: 300;
     text-transform: uppercase;
     color: #555;
+    border-top:.1rem solid white;
+    border-left:.1rem solid white;
+    padding: 1rem;
 }
 
 .small-underline {
@@ -712,7 +715,12 @@ body {
     margin-left: 8rem;
 
 }
-
+.portfolio-heading
+{
+    color: #00BFFF;
+   font-size:  2rem;
+   font-family:'Josefin Sans', sans-serif;
+}
 .main-part {
     display: flex;
     justify-content: space-between;
@@ -758,22 +766,22 @@ body {
     width: 20rem;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.8rem;
-    color: #444;
+    color: #00BFFF;
     outline: none;
 }
 
 .footer-btn {
     padding: 1rem;
     background-color: #00BFFF;
-    color: #ddd;
+    color: black;
     border: none;
     cursor: pointer;
     transition: all 0.8s;
 }
 
 .footer-btn:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #00BFFF;
+    color: #ddd;
 }
 
 .gallery {
@@ -985,6 +993,7 @@ body {
     .about-us-heading {
         font-size: 2.5rem;
         text-align: center;
+        b
     }
 
     .sub-heading {
