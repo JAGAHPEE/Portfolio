@@ -1,7 +1,7 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
-
+    overflow-x: hidden;
 }
 
 body {
@@ -16,8 +16,8 @@ body {
 .sidebar {
     margin-top: 0;
     width: 8rem;
-    height: 100%;
-    background-color: #eee;
+    height: 100VH;
+    background-color: #000000;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -34,7 +34,7 @@ body {
 .line {
     height: .2rem;
     width: 2.5rem;
-    background-color: #222;
+    background-color: #00BFFF;
     margin-bottom: .6rem;
     margin-top: 1rem;
 }
@@ -61,12 +61,12 @@ body {
 
 .social-link {
     font-size: 2rem;
-    color: #777;
+    color: #00BFFF;
     transition: 0.3s color;
 }
 
 .social-link:hover {
-    color: #86c1de;
+    color: #ff0000;
 }
 
 .year p {
@@ -84,8 +84,8 @@ body {
     width: 40rem;
     height: 100%;
     background: #0f0c29;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c297f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);   */
+    /* background: linear-gradient(to right, #24243e, #302b63, #0f0c297f);  */
 
     background-size: cover;
     display: flex;
@@ -101,7 +101,7 @@ body {
     font-size: 3.5rem;
     font-weight: 500;
     letter-spacing: .2rem;
-    color: #b85d1c;
+    color: #00BFFF;
     text-align: center;
 }
 
@@ -115,12 +115,12 @@ body {
     background-color: rgba(0, 0, 0, 0.3);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.6rem;
-    color: #b85d1c;
+    color: #00BFFF;
     letter-spacing: .1rem;
     outline: none;
-    border: 0.1rem solid #555;
+    border: 0.1rem solid #00BFFF;
     border-radius: 10rem;
-    transition: background-color 0.2s;
+    transition: 0.2s;
 
 }
 
@@ -132,7 +132,7 @@ body {
 .navigation-search-btn {
     border: none;
     background-color: transparent;
-    color: #b85d1c;
+    color: #00BFFF	;
     font-size: 1.7rem;
     position: absolute;
     top: 1rem;
@@ -158,10 +158,11 @@ body {
     color: #fff;
     letter-spacing: 1rem;
     font-size: 1.6rem;
-    font-weight: 400;
+    font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;
     transition: color 0.5s;
+    
 
 }
 
@@ -173,8 +174,8 @@ body {
 .navigation-link::before {
     content: "";
     width: 0rem;
-    height: .1rem;
-    background-color: #b85d1c;
+    height: .3rem;
+    background-color: #00BFFF	;
     position: absolute;
     top: 2.5rem;
     left: -3rem;
@@ -185,8 +186,8 @@ body {
 .navigation-link::after {
     content: "";
     width: 0rem;
-    height: .1rem;
-    background-color: #b85d1c;
+    height: .3rem;
+    background-color: #00BFFF	;
     position: absolute;
     top: 2.5rem;
     right: -2rem;
@@ -195,7 +196,8 @@ body {
 }
 
 .navigation-link:hover {
-    color: #b85d1c;
+    color: #00BFFF	;
+    
 
 }
 
@@ -237,8 +239,9 @@ body {
 /* Header */
 .image1 {
     border-radius: 100px;
-    width: 65px;
+    width: auto;
     height: 65px;
+    padding: 8px;
     margin: 8px;
 }
 
@@ -247,6 +250,7 @@ body {
     height: 100vh;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(Header/header.jpg) center no-repeat;
     background-size: cover;
+    
 }
 
 .brand {
@@ -257,7 +261,7 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 2.7rem;
     font-weight: 400;
-    color: #b85d1c;
+    color: #00BFFF;
     letter-spacing: .2rem;
 }
 
@@ -282,6 +286,7 @@ body {
     font-size: 3.5rem;
     font-weight: 300;
     animation: anim 1.5s .5s backwards;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .banner-button {
@@ -293,14 +298,19 @@ body {
     border: none;
     border-radius: 10rem;
     outline: none;
-    background: linear-gradient(to right, gold, #b85d1c);
+    background: white;
     cursor: pointer;
     animation: anim 1.5s 1s backwards;
+    transition: all 1s;
 
 }
 
 .banner-button:hover {
-    background: linear-gradient(to left, gold, #b85d1c);
+    background:#00BFFF;
+    transform: scale(1.15);
+    color: white;
+    font-weight: bold;
+
 }
 
 .banner-button:active {
@@ -320,14 +330,15 @@ body {
 /* End of Header */
 .listlink {
     text-decoration: none;
-    color: #b85d1c;
+    color: #00BFFF;
 }
 
 /* about us */
 .about-us {
     margin-left: 8rem;
     display: flex;
-    background-color: #ddd;
+    /* background-color: #ddd; */
+    /* background-image: linear-gradient( 107deg,  rgba(9,0,53,1) 28.5%, rgb(45, 44, 98) 81.4% ); */
     padding: 5rem 0rem;
     
 }
@@ -348,12 +359,15 @@ body {
     font-weight: 300;
     text-transform: uppercase;
     color: #555;
+    border-top:.1rem solid white;
+    border-left:.1rem solid white;
+    padding: 1rem;
 }
 
 .small-underline {
     width: 9rem;
     height: .1rem;
-    background-color: #b85d1c;
+    background-color: #00BFFF;
     margin: 0 auto 1rem auto;
 
 }
@@ -361,14 +375,14 @@ body {
 .big-underline {
     width: 20rem;
     height: .1rem;
-    background-color: #b85d1c;
+    background-color: #00BFFF;
 }
 
 .sub-heading {
     font-size: 3.5rem;
     font-weight: 300;
     letter-spacing: .2rem;
-    color: #b85d1c;
+    color: #00BFFF;
 }
 
 .about-us-paragraph {
@@ -376,6 +390,7 @@ body {
     font-style: italic;
     font-weight: 300;
     text-align: center;
+    color: #ffffff;
     /* margin-bottom: 2rem; */
 }
 
@@ -386,9 +401,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     text-transform: uppercase;
-    color: #b85d1c;
+    color: #00BFFF;
     background-color: transparent;
-    border: .1rem solid #b85d1c;
+    border: .1rem solid #00BFFF;
     outline: none;
     cursor: pointer;
 }
@@ -413,7 +428,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    box-shadow: 0 3rem 6rem rgba(0, 0.0, .4);
+    box-shadow: 0 3rem 6rem #00739a41;
     border-radius: .4rem;
 }
 
@@ -433,23 +448,24 @@ body {
     transform: translate(-30%, -30%);
 }
 .project{
-    background-color: rgb(134, 204, 241);
+    /* background-color: rgb(0, 0, 0); */
+    /* background-image: linear-gradient( 107deg,  rgba(9,0,53,1) 28.5%, rgb(45, 44, 98) 81.4% ); */
     padding-top: 5rem;
 }
 /* End of About Us */
 
 /* common header */
 .common-header {
-    padding: 5rem;
+    padding: 0 2rem 2rem 2rem;
     text-align: center;
-    color: #b85d1c;
+    color: #00BFFF;
 }
 
 .small-underline {
     width: 9rem;
     height: .1rem;
     margin: 0 auto 1rem auto;
-    background-color: #b85d1c;
+    background-color: #00BFFF;
     margin: 0 auto 1rem auto;
 
 }
@@ -458,7 +474,7 @@ body {
     width: 20rem;
     height: .1rem;
     margin: auto;
-    background-color: #b85d1c;
+    background-color: #00BFFF;
 }
 
 .common-heading {
@@ -470,12 +486,12 @@ body {
 /* End of common header */
 
 
-/* Rooms */
+/* Arena */
 
 .rooms {
     margin-left: 8rem;
-    background-image: linear-gradient( 179.6deg,  rgb(125, 210, 255) 5.3%, rgb(18, 23, 31) 78.4% );
-    
+    /* background-image: linear-gradient( 179.6deg,  rgb(125, 210, 255) 5.3%, rgb(18, 23, 31) 78.4% ); */
+    background-color: #000000;
 }
 
 .rooms-cards-wrapper {
@@ -490,6 +506,10 @@ body {
     background-color: #15141b;
     box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.3);
     overflow: hidden;
+    border-bottom: 0.2rem solid white;
+    border-right: 2px solid white;
+    border-left: 2px solid #00BFFF;
+    border-top: 2px solid #00BFFF;
 }
 
 .skc-img {
@@ -535,9 +555,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     text-transform: uppercase;
-    color: #b85d1c;
+    color: #00BFFF;
     background-color: transparent;
-    border: .1rem solid #b85d1c;
+    border: .1rem solid #00BFFF;
     border-radius: 10rem;
     outline: none;
     cursor: pointer;
@@ -559,8 +579,8 @@ body {
     margin: 4rem 0;
     background-color: transparent;
     text-transform: uppercase;
-    color: #b85d1c;
-    border: .2rem solid #b85d1c;
+    color: #00BFFF;
+    border: .2rem solid #00BFFF;
     outline: none;
     cursor: pointer;
     box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.2);
@@ -568,16 +588,16 @@ body {
 }
 
 .rooms-btn:hover {
-    background-color: #b85d1c;
+    background-color: #00BFFF;
     color: #ddd;
 
 }
 
-/* End of Rooms */
+/* End of Arena*/
 
 /* Customers */
 
-/* Customers */
+/* Academics */
 .customers {
     margin-left: 8rem;
     padding-bottom: 7rem;
@@ -601,9 +621,9 @@ body {
     margin-bottom: 5rem;
 }
 
-.card-2 {
+/* .card-2 {
     margin-left: 2rem;
-}
+} */
 
 .sk-card-wrapper{
     display: flex;
@@ -637,18 +657,57 @@ body {
 .sk-paragraph-1 {
     font-size: 1.2rem;
     font-style: italic;
-    color: #b85d1c;
+    color: #00BFFF;
     text-align: justify;
 }
 
 .sk-paragraph-2 {
     font-size: 1.3rem;
     font-style: italic;
-    color: #b85d1c;
+    color: #00BFFF;
     text-align: justify;
 }
 
-/* End of Customers */
+/* End of Academics */
+
+
+/* Certifcates Gallery */
+#permas {
+    margin-top: 10px;
+    height: 120px;
+    padding: 5rem 0 5rem 0;
+    bottom: 0;
+    white-space:nowrap;
+    width: 100vh;
+    width: max-content;
+    left: 0;
+    animation-name: scroll;
+    animation-duration: 80s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-color: #000000;
+  }
+  #permas img {
+    height: 100%;
+  }
+  #perms img:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-80%);
+    }
+  }
+  img{
+    padding-right: 20px;
+  }
+  
+/* End of Certificates Gallery */
 
 /* footer */
 
@@ -656,7 +715,12 @@ body {
     margin-left: 8rem;
 
 }
-
+.portfolio-heading
+{
+    color: #00BFFF;
+   font-size:  2rem;
+   font-family:'Josefin Sans', sans-serif;
+}
 .main-part {
     display: flex;
     justify-content: space-between;
@@ -668,7 +732,7 @@ body {
 .hotel-heading {
     font-size: 2.5rem;
     font-weight: 300;
-    color: #b85d1c;
+    color: #00BFFF;
 }
 
 .footer-list {
@@ -702,27 +766,29 @@ body {
     width: 20rem;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.8rem;
-    color: #444;
+    color: #00BFFF;
     outline: none;
 }
 
 .footer-btn {
     padding: 1rem;
-    background-color: #b85d1c;
-    color: #ddd;
+    background-color: #00BFFF;
+    color: black;
     border: none;
     cursor: pointer;
     transition: all 0.8s;
 }
 
 .footer-btn:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #00BFFF;
+    color: #ddd;
 }
 
 .gallery {
     width: 45rem;
 }
+
+/* Certificates  */
 .certificates {
     width:60rem;
 }
@@ -775,13 +841,17 @@ body {
 .text-right i {
     font-size: 2rem;
     margin: .5rem;
-    color: tomato
+    color: #00BFFF
 }
 
 .text-right span {
     color: gold;
 }
 /* end of footer */
+
+
+
+/* Media Query */
 
 
 @media(max-width:1400px) {
@@ -1003,4 +1073,22 @@ body {
     }
 
 
+}
+
+/* End of Media Query */
+
+/* Decoration */
+
+.section_line
+{
+    width: 60%;
+    height: 0.3rem;
+    background-color: #00BFFF;
+    margin:  5rem 5rem;
+    display: flex;
+}
+
+.line_end
+{
+    margin-left: 50%;
 }
