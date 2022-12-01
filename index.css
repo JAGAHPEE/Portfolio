@@ -660,17 +660,17 @@ body {
 
 .sk-paragraph-1 {
     font-size: 1.2rem;
-    font-style: italic;
-    color: #002734;
+    font-family: Tahoma;
+    font-weight: 600;
+    color: #0b526a;
     text-align: justify;
-    font-weight: bold;
 }
 
 .sk-paragraph-2 {
     font-size: 1.3rem;
-    font-style: italic;
-    font-weight: bold;
-    color: #002734;
+    font-family: Tahoma;
+    font-weight: 500;
+    color: #0b526a;
     text-align: justify;
 }
 .sk-info ul
