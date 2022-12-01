@@ -371,7 +371,11 @@ body {
     margin: 0 auto 1rem auto;
 
 }
-
+.sk-fullName
+{
+    font-family: Verdana;
+    font-weight: 70;
+}
 .big-underline {
     width: 20rem;
     height: .1rem;
@@ -657,17 +661,22 @@ body {
 .sk-paragraph-1 {
     font-size: 1.2rem;
     font-style: italic;
-    color: #00BFFF;
+    color: #002734;
     text-align: justify;
+    font-weight: bold;
 }
 
 .sk-paragraph-2 {
     font-size: 1.3rem;
     font-style: italic;
-    color: #00BFFF;
+    font-weight: bold;
+    color: #002734;
     text-align: justify;
 }
-
+.sk-info ul
+{
+    list-style:square;
+}
 /* End of Academics */
 
 
