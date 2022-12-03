@@ -1101,3 +1101,16 @@ body {
 {
     margin-left: 50%;
 }
+model-viewer
+{
+    width: 40rem;
+    height: 40rem;
+    
+}
+.pcb-design
+{
+    margin-left: 8rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
